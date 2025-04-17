@@ -1,0 +1,18 @@
+# streamlit: A framework for building interactive web applications in Python.
+streamlit
+
+# langchain_core: Core components for building applications with language models.
+langchain_core
+
+# lanchain_community: Community-contributed tools and integrations for LangChain.
+langchain_community
+
+# langchain_ollama: Integration for using Ollama models with LangChain.
+langchain_ollama
+
+# selenium: A tool for automating web browsers, often used for web scraping and testing.
+selenium
+
+# unstructured: A library for processing and extracting data from unstructured documents.
+unstructured
+

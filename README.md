@@ -1,5 +1,10 @@
 # AI Playgrounds
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Streamlit](https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white)
+![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)
+
+
 Welcome to **AI Playgrounds**, a repository created to explore, experiment, and prototype Proof of Concepts (POCs) around AI tools and technologies using Python. This is a dynamic space designed to facilitate quick experimentation and learning in the ever-evolving field of Artificial Intelligence.
 
 ## Objectives:

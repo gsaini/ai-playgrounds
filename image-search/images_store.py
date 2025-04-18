@@ -17,7 +17,7 @@ class ImagesStore:
     os.makedirs(images_directory, exist_ok=True)
 
     @classmethod
-    def upload_images(cls, images):
+    def upload_images(cls, image):
         """
         Uploads images to the specified image directory and indexes them in the vector store.
 
@@ -33,18 +33,17 @@ class ImagesStore:
         Raises:
             FileNotFoundError: If the `image_directory` does not exist and cannot be created.
         """
-        for image in images:
-            image_path = cls.images_directory + image.name
-            with open(image_path, "wb") as f:
-                f.write(image.getbuffer())
-            
-            description = cls._describe_image(image_path)
-            document = Document(page_content=description)
-            document_id = cls.vector_store.add_documents([document])[0]
-            cls.document_ids_to_images[document_id] = image.name
-            cls.document_ids_to_documents[document_id] = document
+        image_path = cls.images_directory + image.name
+        with open(image_path, "wb") as f:
+            f.write(image.getbuffer())
+        
+        description = cls._describe_image(image_path)
+        document = Document(page_content=description)
+        document_id = cls.vector_store.add_documents([document])[0]
+        cls.document_ids_to_images[document_id] = image.name
+        cls.document_ids_to_documents[document_id] = document
 
-            return document_id
+        return document_id
 
 
     @classmethod

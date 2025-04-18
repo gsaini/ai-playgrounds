@@ -1,10 +1,25 @@
 # Multi-Tool Agent
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)
+[![r/agentdevelopmentkit](https://img.shields.io/badge/Reddit-r%2Fagentdevelopmentkit-FF4500?style=flat&logo=reddit&logoColor=white)](https://www.reddit.com/r/agentdevelopmentkit/)
+
+<html>
+    <h2 align="center">
+      <img src="https://raw.githubusercontent.com/google/adk-python/main/assets/agent-development-kit.png" width="256"/>
+    </h2>
+    <h3 align="center">
+      Google ADK is a framework for building AI agents that can interact with users, perform tasks, and integrate with external tools and APIs. It provides a flexible architecture for creating agents with custom tools, memory, and state management.
+    </h3>
+    <h3 align="center">
+      Important Links:
+      <a href="https://google.github.io/adk-docs/">Docs</a> &
+      <a href="https://github.com/google/adk-samples">Samples</a>.
+    </h3>
+</html>
+
 This project is a proof of concept (POC) to explore the capabilities of Google ADK (Agent Development Kit) for building AI agents. The goal is to create agents that can perform specific tasks using tools and models provided by Google ADK.
 
-## About Google ADK
-
-Google ADK is a framework for building AI agents that can interact with users, perform tasks, and integrate with external tools and APIs. It provides a flexible architecture for creating agents with custom tools, memory, and state management.
 
 ## Project Overview
 

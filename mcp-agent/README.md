@@ -1,6 +1,10 @@
 # MCP Agent
 
-This project demonstrates the use of an MCP (Model Context Protocol) agent to interact with language models and tools for answering complex queries. The agent is built using the `agno` library and integrates the following components:
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![DuckDuckGo](https://img.shields.io/badge/duckduckgo-de5833?style=for-the-badge&logo=duckduckgo&logoColor=white)
+
+
+This project demonstrates the use of an [MCP (Model Context Protocol)](https://modelcontextprotocol.io/introduction) agent to interact with language models and tools (i.e. [mcp registry](https://mastra.ai/mcp-registry-registry)) for answering complex queries. The agent is built using the `agno` library and integrates the following components:
 
 - **Language Model**: The agent uses the `Ollama` model (version `llama3.2`) for natural language understanding and response generation.
 - **Tools**: The agent integrates `DuckDuckGoTools` to fetch real-time information from the web, such as weather updates and news articles.

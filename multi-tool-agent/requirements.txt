@@ -1,1 +1,5 @@
 google-adk
+dotenv
+aiohttp
+geopy
+timezonefinder

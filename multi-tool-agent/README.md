@@ -43,7 +43,7 @@ The `multi-tool-agent` project demonstrates the following features:
    - The agent processes user queries and calls the appropriate tools to generate responses.
 
 ### Agent Workflow
-![Agent Workflow](agent-workflow.png)
+![Agent Workflow](assets/agent-workflow.png)
 
 ## Example Queries
 
@@ -88,7 +88,7 @@ The `multi-tool-agent` project demonstrates the following features:
    - Use the terminal or ADK's Dev UI to interact with the agent.
 
 ### Agentic Dev UI
-![Agentic Dev UI](agentic-dev-ui.png)
+![Agentic Dev UI](assets/agentic-dev-ui.png)
 
 
 ## Requirements

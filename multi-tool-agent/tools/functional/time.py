@@ -50,9 +50,3 @@ def get_current_time_by_location(location: str) -> dict:
             "status": "error",
             "error_message": str(e)
         }
-
-# if __name__ == "__main__":
-#     # Example usage
-#     location = "Jaipur"
-#     result = get_current_time_by_location(location)
-#     print(result)

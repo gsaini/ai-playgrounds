@@ -1,0 +1,20 @@
+# pandas: A powerful data analysis and manipulation library for Python, providing data structures like DataFrames and Series.
+pandas
+
+# numpy: A fundamental package for numerical computing in Python, offering support for arrays, matrices, and mathematical functions.
+numpy
+
+# matplotlib: A comprehensive library for creating static, animated, and interactive visualizations in Python.
+matplotlib
+
+# seaborn: A statistical data visualization library built on top of matplotlib, providing a high-level interface for drawing attractive and informative graphics.
+seaborn
+
+# scikit-learn: A machine learning library for Python, offering simple and efficient tools for data mining and data analysis.
+scikit-learn
+
+# statsmodels: A library for estimating and testing statistical models, performing statistical tests, and exploring data.
+statsmodels
+
+# gradio: A library for creating user interfaces for machine learning models, allowing users to interact with models through web applications.
+gradio

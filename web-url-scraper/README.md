@@ -6,6 +6,8 @@
 ## Overview
 The Web URL Scraper is a Streamlit-based application designed to scrape and analyze web pages. It leverages LangChain components and Selenium to extract and process data from web pages, providing users with insights and analysis in an interactive UI.
 
+Demo URL - https://ai-playgrounds-kyvotappkhqds7vtp4p3ghf.streamlit.app
+
 ## Features
 - **Web Scraping**: Uses Selenium to extract data from web pages.
 - **Data Analysis**: Embeds and stores vectors for document analysis.

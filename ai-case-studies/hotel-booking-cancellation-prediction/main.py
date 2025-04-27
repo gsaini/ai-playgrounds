@@ -40,19 +40,23 @@ import gradio as gr
 from labeled_barplot import labeled_barplot
 from stacked_barplot import stacked_barplot
 
+import streamlit as st
+
 path = os.path.join('data', 'INNHotelsGroup_pastdata.csv')
 
 hotel = pd.read_csv(path)
 
+# Streamlit app title
+st.title("Hotel Booking Cancellation Prediction")
+
+# Load the data
+st.subheader("Sample Data")
+st.write(hotel.head(10))
+
 # Visualize the distribution of hotel bookings by market segment type
-plt.figure(figsize=(10, 6))
-hotel['market_segment_type'].value_counts().plot(kind='bar', color='skyblue')
-plt.title('Distribution of Hotel Bookings by Market Segment Type')
-plt.xlabel('Market Segment Type')
-plt.ylabel('Number of Bookings')
-plt.xticks(rotation=45)
-plt.tight_layout()
-plt.show()
+st.subheader("Distribution of Hotel Bookings by Market Segment Type")
+market_segment_counts = hotel['market_segment_type'].value_counts()
+st.bar_chart(market_segment_counts)
 
 # creating a copy of the data to avoid modifying the original dataset
 data = hotel.copy()
@@ -62,8 +66,13 @@ print(data.describe().T)
 
 print(data.info())
 
+
+# Streamlit app title
+st.title("Stacked Bar Plot Visualization")
 labeled_barplot(data, 'booking_status', perc=True)
 
+# Streamlit app title
+st.title("Labeled Bar Plot Visualization")
 stacked_barplot(data, 'market_segment_type', 'booking_status')
 
 

@@ -4,9 +4,6 @@ pandas
 # numpy: A fundamental package for numerical computing in Python, offering support for arrays, matrices, and mathematical functions.
 numpy
 
-# matplotlib: A comprehensive library for creating static, animated, and interactive visualizations in Python.
-matplotlib
-
 # seaborn: A statistical data visualization library built on top of matplotlib, providing a high-level interface for drawing attractive and informative graphics.
 seaborn
 
@@ -18,3 +15,6 @@ statsmodels
 
 # gradio: A library for creating user interfaces for machine learning models, allowing users to interact with models through web applications.
 gradio
+
+# Added Streamlit for creating an interactive web-based UI
+streamlit

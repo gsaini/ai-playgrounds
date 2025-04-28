@@ -58,6 +58,20 @@ Welcome to **AI Playgrounds**, a repository created to explore, experiment, and 
     - **How to Run**:
       - Install dependencies and run the `main.py` script using Streamlit.
       - Perform EDA and visualize results interactively.
+  - **Optical Character Recognition (OCR)**
+    - **Description**: Leverages the Gemma-3 model on local machine to extract structured text from images.
+    - **Features**:
+      - Advanced text and visual reasoning capabilities.
+      - Supports over 140 languages for global applications.
+      - Outputs structured Markdown for clear and concise results.
+    - **Gemma-3 Overview**:
+      - Gemma-3 is a cutting-edge AI model optimized for single GPU/TPU usage.
+      - Offers a 128k-token context window for handling complex tasks.
+      - Supports function calling and structured outputs for building intelligent workflows.
+      - Integrates seamlessly with tools like Hugging Face, Ollama, and Google AI Studio.
+    - **How to Run**:
+      - Install dependencies and run the `app.py` script using Streamlit.
+      - Upload an image and extract text interactively.
 - **Future Additions**: More AI-based case studies will be added to this directory.
 
 ## Contributions

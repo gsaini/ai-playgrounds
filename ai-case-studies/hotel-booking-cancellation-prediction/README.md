@@ -103,7 +103,7 @@ ai-case-studies/
 
 Below is a high-level workflow diagram for the AI solution:
 
-![Workflow](./assets/workflow.png)
+![Workflow](./assets/workflow.svg)
 
 
 ## Key Files

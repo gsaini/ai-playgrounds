@@ -1,5 +1,11 @@
 # AI Engineering Studio
 
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Streamlit](https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white)
+![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![DuckDuckGo](https://img.shields.io/badge/duckduckgo-de5833?style=for-the-badge&logo=duckduckgo&logoColor=white)
+
 This directory contains projects focused on building AI agents and tools for advanced engineering use cases. Each project demonstrates the integration of AI models with custom tools and protocols.
 
 ## Projects

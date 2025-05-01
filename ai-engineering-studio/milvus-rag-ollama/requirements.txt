@@ -1,0 +1,4 @@
+pymilvus
+ollama
+grpcio>=1.71.0
+streamlit

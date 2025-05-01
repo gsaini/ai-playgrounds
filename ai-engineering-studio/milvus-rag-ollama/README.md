@@ -10,6 +10,9 @@ The Milvus RAG system integrates:
 - **Milvus**: A vector database for efficient similarity search and storage of embeddings.
 - **Ollama**: A language model for generating responses based on retrieved context.
 
+## Screenshot
+![](./assets/QA_Chat_APP.gif)
+
 ## Applications
 
 ### 1. **Milvus App**

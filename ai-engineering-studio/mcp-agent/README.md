@@ -27,6 +27,19 @@ The agent processes user queries by:
 2. Using the integrated tools to fetch relevant data.
 3. Generating a response based on the fetched data and the language model's capabilities.
 
+## Popular MCP Servers
+
+If you're exploring MCP (Model Context Protocol) agents, you might find these MCP servers helpful for deployment, testing, or benchmarking your implementations:
+
+* [Model Context Protocol Servers Repository](https://github.com/modelcontextprotocol/servers): A comprehensive repository featuring popular MCP servers, deployment guidelines, and advanced usage examples.
+* **Examples of MCP Servers:**
+
+  - **MCP Core Server:** A lightweight server for quickly spinning up MCP environments, ideal for prototyping.
+  - **MCP Advanced Server:** Comes with extended features, such as multi-tool integration and advanced logging capabilities.
+  - **MCP Cloud Server:** Optimized for cloud-based deployments, offering scalability and performance enhancements.
+
+These servers provide a great starting point for understanding and working with MCP, whether you're developing new agents or testing existing ones.
+
 ## Example Queries
 
 ### Query 1: "Find the current weather in New York City & on the basis of response please suggest what to wear?"

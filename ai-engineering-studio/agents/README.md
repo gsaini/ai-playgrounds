@@ -7,3 +7,6 @@ Simplifies Enterprise Agent Integration: Provides a straightforward way to integ
 Supports Key Enterprise Requirements: Offers core functionalities essential for secure, enterprise-grade agent ecosystems, including capability discovery, user experience negotiation, task and state management, and secure collaboration. Open standards for connecting Agents
 
 ![image](https://github.com/user-attachments/assets/bf0d06a2-c966-4681-9131-9b3c503f4395)
+
+Referencees:
+- https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/ 

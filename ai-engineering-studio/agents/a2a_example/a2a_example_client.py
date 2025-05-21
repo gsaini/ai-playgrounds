@@ -1,36 +1,45 @@
-import asyncio
-import uuid
-import httpx
 from a2a.client import A2AClient
-from a2a.types import MessageSendParams
+from typing import Any
+import httpx
+from uuid import uuid4
+from a2a.types import (
+    SendMessageRequest,
+    MessageSendParams,
+    SendStreamingMessageRequest,
+)
 
-async def main():
+
+async def main() -> None:
     async with httpx.AsyncClient() as httpx_client:
         client = await A2AClient.get_client_from_agent_card_url(
-            httpx_client, "http://localhost:8008/"
+            httpx_client, 'http://localhost:9999'
+        )
+        send_message_payload: dict[str, Any] = {
+            'message': {
+                'role': 'user',
+                'parts': [
+                    {'kind': 'text', 'text': 'how much is 10 USD in INR?'}
+                ],
+                'messageId': uuid4().hex,
+            },
+        }
+        request = SendMessageRequest(
+            params=MessageSendParams(**send_message_payload)
         )
 
-        message_text = "Hello A2A Echo Agent!"
-        send_message_payload = {
-            "message": {
-                "role": "user",
-                "parts": [{"type": "text", "text": message_text}],
-                "messageId": uuid.uuid4().hex,
-            }
-        }
-        request = MessageSendParams(**send_message_payload)
-}
-        }
-        request = MessageSendParams(**send_message_payload)
-        try:
-            response = await client.send_message(request)
-            print("Server response:", response.model_dump_json(exclude_none=True))
-        except Exception as e:
-            print(f"Error sending message: {e}")
+        response = await client.send_message(request)
+        print(response.model_dump(mode='json', exclude_none=True))
 
-if __name__ == "__main__":
-    asyncio.run(main())
-        print("Server response:", response.model_dump_json(exclude_none=True))
+        streaming_request = SendStreamingMessageRequest(
+            params=MessageSendParams(**send_message_payload)
+        )
 
-if __name__ == "__main__":
+        stream_response = client.send_message_streaming(streaming_request)
+        async for chunk in stream_response:
+            print(chunk.model_dump(mode='json', exclude_none=True))
+
+
+if __name__ == '__main__':
+    import asyncio
+
     asyncio.run(main())

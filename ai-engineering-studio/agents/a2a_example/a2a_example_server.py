@@ -52,7 +52,14 @@ class EchoAgentExecutor(AgentExecutor):
         event_queue.put_nowait(response_message)
         event_queue.put_nowait(None)  # Signal end of events
 
+event_queue.put_nowait(None)  # Signal end of events
+
     async def cancel(self):
+        # TODO: Implement basic cancellation mechanism
+        print("Cancellation requested, but not implemented yet.")
+
+# 6. Server Setup
+if __name__ == "__main__":
         raise NotImplementedError("Cancel not supported")
 
 # 6. Server Setup

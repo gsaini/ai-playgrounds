@@ -19,7 +19,17 @@ async def main():
             }
         }
         request = MessageSendParams(**send_message_payload)
-        response = await client.send_message(request)
+}
+        }
+        request = MessageSendParams(**send_message_payload)
+        try:
+            response = await client.send_message(request)
+            print("Server response:", response.model_dump_json(exclude_none=True))
+        except Exception as e:
+            print(f"Error sending message: {e}")
+
+if __name__ == "__main__":
+    asyncio.run(main())
         print("Server response:", response.model_dump_json(exclude_none=True))
 
 if __name__ == "__main__":

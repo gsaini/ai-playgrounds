@@ -45,7 +45,25 @@ class EchoAgentExecutor(AgentExecutor):
     def __init__(self):
         self.logic = EchoAgentLogic()
 
+self.logic = EchoAgentLogic()
+
     async def execute(self, context: RequestContext, event_queue: EventQueue):
+        try:
+            text_to_echo = context.request.params.message.parts[0].text
+            echoed_text = await self.logic.echo(text_to_echo)
+            response_message = new_agent_text_message(echoed_text)
+            event_queue.put_nowait(response_message)
+        except IndexError:
+            error_message = new_agent_text_message("Error: No message parts found.")
+            event_queue.put_nowait(error_message)
+        except Exception as e:
+            error_message = new_agent_text_message(f"An error occurred: {str(e)}")
+            event_queue.put_nowait(error_message)
+        finally:
+            event_queue.put_nowait(None)  # Signal end of events
+
+    async def cancel(self):
+        raise NotImplementedError("Cancel not supported")
         text_to_echo = context.request.params.message.parts[0].text
         echoed_text = await self.logic.echo(text_to_echo)
         response_message = new_agent_text_message(echoed_text)

@@ -1,5 +1,9 @@
 # Automated Sentiment Analysis for E-Commerce Customer Reviews
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white)
+
 ## Problem Statement
 
 In the fast-paced world of e-commerce, customer reviews are a critical factor influencing product perception and purchasing decisions. Businesses must extract actionable insights from these reviews to remain competitive. Failure to monitor and address customer feedback, especially negative sentiment, can result in:

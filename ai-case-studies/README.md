@@ -25,5 +25,45 @@ This directory contains AI-based case studies that explore and solve real-world 
   - Workflow diagrams in `assets/`.
   - Data files in `data/` for analysis and modeling.
 
+### 2. **Food Delivery Optimization**
+- **Description**: Analyzes and optimizes food delivery operations for efficiency and cost savings.
+- **Features**:
+  - Exploratory data analysis and visualization.
+  - Route and time optimization using Python.
+  - Interactive dashboards and reporting.
+- **How to Run**:
+  - Install dependencies from `requirements.txt`.
+  - Run the notebook or main script for analysis.
+- **Assets**:
+  - Data and visualizations in the `data/` and `assets/` folders.
+
+### 3. **Sentiment Analysis for E-Commerce and Entertainment**
+- **Description**: Performs sentiment analysis on product and movie reviews to extract insights for business and content strategy.
+- **Features**:
+  - Text preprocessing and lexicon-based sentiment analysis.
+  - Data cleaning and structuring for unstructured review data.
+  - Evaluation and visualization of sentiment trends.
+- **How to Run**:
+  - Use the provided Jupyter notebooks for step-by-step analysis.
+  - Data files are included for hands-on practice.
+
+### 4. **Cred-Pay Credit Card Eligibility Modeling**
+- **Description**: Organizes and analyzes customer data to predict credit card application approval for banking partners.
+- **Features**:
+  - Data cleaning, transformation, and EDA.
+  - Predictive modeling using classification algorithms.
+  - Insights and reporting for business recommendations.
+- **How to Run**:
+  - Open the solution notebook for a guided workflow.
+  - Sample data and instructions are provided.
+
+### 5. **Uber Data Analysis**
+- **Description**: Explores and visualizes Uber ride data to uncover trends and patterns in urban mobility.
+- **Features**:
+  - Data wrangling and visualization with pandas and matplotlib.
+  - Insights into ride frequency, locations, and time-based trends.
+- **How to Run**:
+  - Use the provided notebook and data files for analysis.
+
 ## Contributions
 Contributions are welcome! Feel free to open issues or submit pull requests to improve the projects.
